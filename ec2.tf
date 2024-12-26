@@ -8,7 +8,7 @@ subnet_id="${aws_subnet.public_subnet-1.id}"
 associate_public_ip_address=true
 user_data="${file("data.sh")}"
 tags={
-Name="My public Instance 1 "
+Name="My public Instance"
 }
 }
 
