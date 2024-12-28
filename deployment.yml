@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fish-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: python-app
+  template:
+    metadata:
+      labels:
+        tier: python-app
+    spec:
+      containers:
+      - name: container
+        image: 
+        image: lavanyasomepalli/medical-insurance:python-deployment
+        ports:
+        - containerPort: 80
