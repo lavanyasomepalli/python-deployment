@@ -1,8 +1,8 @@
 resource "aws_instance" "public_subnet-1" {
-ami="ami-0ca9fb66e076a6e32"
+ami="ami-01816d07b1128cd2d"
 instance_type="t2.micro"
 count=1
-key_name="LAVANYA"
+key_name="rocky"
 vpc_security_group_ids=["${aws_security_group.demosg.id}"]
 subnet_id="${aws_subnet.public_subnet-1.id}"
 associate_public_ip_address=true
